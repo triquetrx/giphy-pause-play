@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<head>
+	<title>GIF Play and Pause</title>
+</head>
+
+<body>
+	<div class="mainGif" id="mainGif" onclick="pause()" style="display: none;">
+		<img id="gif1" src="./giphy.gif">
+	</div>
+	<div class="static" id="static1" onclick="play()">
+		<img id="static1" style="width: 500px; height: 281px;" src="./static.JPG">
+	</div>
+</body>
+
+<script type="text/javascript">
+	var animate=document.getElementById("mainGif");
+	var static = document.getElementById("static1");
+	function play(){
+			static.style.display = "none";
+			animate.style.display = "block";
+	}
+	function pause(){
+			animate.style.display = "none";
+			static.style.display = "block";
+	}
+
+</script>
+</html>
